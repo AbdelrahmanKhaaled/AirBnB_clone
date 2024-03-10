@@ -24,6 +24,7 @@ class BaseModel():
             self.updated_at = datetime.utcnow()
 
     def __str__(self):
+        '''returns data'''
         return ("[{}] ({}) {}".format(self.__class__.__name__, self.id, self.__dict__))
 
     def save(self):
