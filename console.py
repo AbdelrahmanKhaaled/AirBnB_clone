@@ -13,11 +13,12 @@ class HBNBCommand(cmd.Cmd):
 
     def do_EOF(self, arg):
         '''Quit the program'''
+        print()
         return True
 
     def do_help(self, arg):
         '''help for progeam'''
-        print("Quit command to exitthe program")
+        print("Quit command to exit the program")
 
 if __name__ == '__main__':
-        HBNBCommand().cmdloop()
+    HBNBCommand().cmdloop()
